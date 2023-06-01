@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Stoic quotes</string>
+
+    <string name="another_quote">Fetch another quote</string>
+</resources>
