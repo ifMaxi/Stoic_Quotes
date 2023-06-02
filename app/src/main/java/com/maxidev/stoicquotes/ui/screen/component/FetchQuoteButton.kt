@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
@@ -25,7 +26,10 @@ fun FetchQuoteButton(
         onClick = onClick,
         elevation = ButtonDefaults.buttonElevation()
     ) {
-        Text(text = stringResource(id = R.string.another_quote))
+        Text(
+            text = stringResource(id = R.string.another_quote),
+            style = MaterialTheme.typography.bodySmall
+        )
     }
 }
 

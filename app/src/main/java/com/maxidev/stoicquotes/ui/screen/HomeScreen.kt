@@ -6,7 +6,6 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,11 +40,9 @@ fun TextQuote(
     stoicQuotes: StoicJson,
     onFetch: () -> Unit
 ) {
-    val scroll = rememberScrollState(0)
-
     Column(
         modifier = modifier
-            .padding(50.dp)
+            .padding(40.dp)
             .fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
