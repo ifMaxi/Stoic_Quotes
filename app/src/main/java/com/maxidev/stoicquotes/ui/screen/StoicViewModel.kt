@@ -24,7 +24,10 @@ class StoicViewModel(
      */
 
     var stoicQuote by mutableStateOf("")
+        private set
+
     var stoicAuthor by mutableStateOf("")
+        private set
 
     init {
         fetchAnotherQuote()
