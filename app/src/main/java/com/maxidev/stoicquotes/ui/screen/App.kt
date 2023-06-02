@@ -11,7 +11,6 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.maxidev.stoicquotes.R
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -22,7 +21,10 @@ fun App(modifier: Modifier = Modifier) {
         topBar = {
             TopAppBar(
                 title = {
-                    Text(stringResource(R.string.app_name))
+                    Text(
+                        stringResource(R.string.app_name),
+                        style = MaterialTheme.typography.titleLarge
+                    )
                 }
             )
         }
